@@ -1,0 +1,9 @@
+.container {
+    outline: 1px solid orange;
+}
+.right-container {
+    width: 40%;
+}
+.left-container {
+    width: 60%;
+}
