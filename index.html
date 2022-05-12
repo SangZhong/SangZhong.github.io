@@ -4,10 +4,38 @@
     <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" href="style.css">
   </head>
-  <body>
+  <body style="font-family: Arial, Helvetica, sans-serif">
 
     <div id="mydiv"></div>
+    <div class="container-border container-left">
+        <div class="container container-inner">
+            <h2>Create Revenue Group</h2>
+            <form>
+                <label for="groupName">Group Name</label>
+                <br/>
+                <input type="text" id="groupName" name="groupName" placeholder="Name">
+                <br/><br/>
+                <label for="groupDescription">Group Description</label>
+                <br/>
+                <textarea name="groupDescription" rows="5" placeholder="Add description"></textarea>
+
+
+                <!-- <div class="container">
+                    <input type="submit" value="Reset">
+                    <input type="submit" value="Submit">
+                </div> -->
+            </form>
+        </div>
+    </div>
+    <div class="container-border container-right">
+        <div class="container container-inner">
+            <h2>Browse Revenue Groups</h2>
+        </div>        
+        <div class="container-border container-inner">Group 1</div>
+        <div class="container-border container-inner">Group 2</div>
+    </div>
 
     <script type="text/babel">
       function Hello() {

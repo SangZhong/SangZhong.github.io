@@ -1,9 +1,28 @@
+body {
+    margin: 3%;
+}
+input, textarea {
+    width: 98%;
+}
+h2 {
+    margin-top: 1%;
+}
 .container {
-    outline: 1px solid orange;
+    height: 100%;
+    margin: 3%;
+    overflow: auto;
 }
-.right-container {
+.container-border {
+    outline: 1px solid grey;
+}
+.container-right {
     width: 40%;
+    float: right;
 }
-.left-container {
-    width: 60%;
+.container-left {
+    width: 55%;
+    float: left;
+}
+.container-inner {
+    margin: 3%;
 }
