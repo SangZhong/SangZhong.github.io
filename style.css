@@ -1,11 +1,12 @@
 body {
     margin: 3%;
 }
-input, textarea {
-    width: 98%;
-}
-h2 {
+.title {
     margin-top: 1%;
+    font-size: 25px;
+}
+.input-text {
+    width: 98%;
 }
 .container {
     height: 100%;
@@ -14,6 +15,14 @@ h2 {
 }
 .container-border {
     outline: 1px solid grey;
+}
+.container-border-dotted {
+    outline-style: dashed;
+    margin: 0.1% !important;
+    padding: 1%;
+}
+.container-border-no-line {
+    outline-style: hidden;
 }
 .container-right {
     width: 40%;
@@ -31,6 +40,10 @@ h2 {
 }
 .container-sameline {
     display: table-cell;
+}
+.button-svg {
+    background-color: rgba(255,255,255,0);
+    border: none;
 }
 #the-count {
     float: right;

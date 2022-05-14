@@ -1,0 +1,24 @@
+Hi The,
+
+Congratulation to you been selected to proceed further. Please complete the following assignment and hope you will get selected for interview:
+
+Task: Replicate the UI design with its basic functionality that submits data to display its results. You are allowed to use any frontend programming language or framework (e.g. VueJS or React) of your choice. You are not required to build the backend for this test.
+
+Criteria:
+
+The form must be functional
+Every time the form is submitted, a new Revenue Group is created.
+Submitted Revenue Groups from the form should be displayed as shown on the “Browse Revenue Groups” section in the design.
+Every time the form is submitted, the form input fields should reset
+UI and styling of the components should reflect as close as possible to the sample design given
+You are not necessarily required to follow the sample data in the design
+Attached is a simple rule building form that we use in our application. You do not have to concern yourself with the logic behind it - just build a simple version anyhow you see fit. You do, however, need to make sure it is possible to add or remove fields.
+
+Once you are done just host it on Github and send us the link.
+
+As spoken earlier let us know when you can complete the assignment, it should take you around 4 hours. Feel free to ask if there's anything you need.
+
+Regards,
+
+InvolveAsia
+
