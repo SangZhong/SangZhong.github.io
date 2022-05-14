@@ -35,6 +35,9 @@ body {
 .container-inner {
     margin: 3%;
 }
+.container-grey {
+    background-color: rgb(232,232,232);
+}
 .container-button {
     float: right;
 }

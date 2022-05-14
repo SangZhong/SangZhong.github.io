@@ -17,7 +17,7 @@
                 <p class="title">Create Revenue Group</p>
                 <label for="groupName">Group Name</label>
                 <br/>
-                <input type="text" class="input-text" id="groupName" name="groupName" placeholder="Name">
+                <input type="text" class="input-text" id="groupName" name="groupName" placeholder="Name"/>
                 <br/><br/>
                 <label for="groupDescription">Group Description</label>
                 <br/>
@@ -28,7 +28,7 @@
                 </div>
                 <br/><br/>
                 <div>
-                    <input type="checkbox" id="specialGroup" name="specialGroup" value="specialGroup">
+                    <input type="checkbox" id="specialGroup" name="specialGroup" value="specialGroup"/>
                     <label for="specialGroup"> Special Group</label>
                 </div>
                 <br/>
@@ -41,38 +41,23 @@
                 </p>
                 <div class="container-inner container-border container-border-dotted">
                     <p>Rule 1</p>
-                    <div>
-                        If 
-                        <select id="field" name="field" style="width: 20%;">
-                            <option value="afff_sub_1">afff_sub_1</option>
-                            <option value="afff_sub_2">afff_sub_2</option>
-                            <option value="afff_sub_3">afff_sub_3</option>
-                            <option value="afff_sub_4">afff_sub_4</option>
-                        </select>
-                        <select id="operator" name="operator" style="width: 20%;">
-                            <option value="is_not">is not</option>
-                            <option value="is">is</option>
-                            <option value="starts_with">starts with</option>
-                            <option value="ends_with">ends with</option>
-                            <option value="contains">contains</option>
-                            <option value="does_not_contain">doesn't contain</option>
-                        </select>
-                        <input type="text" id="parameter" name="parameter" placeholder="Enter parameter" style="width: 30%;">
-                        <button type="button" class="button-svg">
-                            <img src="./Instructions/add.svg"/>
-                        </button>
+                    <div class="container-grey">
+                        <div id="ruleDiv">
+                            
+                        </div>
+                        
                     </div>
                     <p>
                         then revenue is 
-                        <input type="text" id="revenue" name="revenue" placeholder="Enter amount">
+                        <input type="text" id="revenue" name="revenue" placeholder="Enter amount"/>
                     </p>
                 </div>
             </div>
             <div class="container container-button">
                 <!-- <button id="reset">Reset</button> -->
                 <!-- <button id="reset">Submit</button> -->
-                <input type="reset" value="Reset">
-                <input type="submit" value="Submit">
+                <input type="reset" value="Reset"/>
+                <input type="submit" value="Submit"/>
             </div>
         </form>
     </div>
@@ -85,11 +70,49 @@
     </div>
 
     <script type="text/babel">
-      function Hello() {
-        return <h1>Hello World!</h1>;
-      }
-      
-      ReactDOM.render(<Hello />, document.getElementById('mydiv'))
+        function Hello() {
+            return <h1>Hello World!</h1>;
+        }
+
+        function Hi() {
+            console.log("hihihi");
+            return <div>If 
+                <select id="field" name="field" style={{width: "20%"}}>
+                    <option value="afff_sub_1">afff_sub_1</option>
+                    <option value="afff_sub_2">afff_sub_2</option>
+                    <option value="afff_sub_3">afff_sub_3</option>
+                    <option value="afff_sub_4">afff_sub_4</option>
+                </select></div>
+            ;
+        }
+
+        function AddRuleDiv() {
+            console.log("sdfaf");
+            return <div>If 
+                <select id="field" name="field" style="width: 20%;">
+                    <option value="afff_sub_1">afff_sub_1</option>
+                    <option value="afff_sub_2">afff_sub_2</option>
+                    <option value="afff_sub_3">afff_sub_3</option>
+                    <option value="afff_sub_4">afff_sub_4</option>
+                </select>
+                <select id="operator" name="operator" style="width: 20%;">
+                    <option value="is_not">is not</option>
+                    <option value="is">is</option>
+                    <option value="starts_with">starts with</option>
+                    <option value="ends_with">ends with</option>
+                    <option value="contains">contains</option>
+                    <option value="does_not_contain">doesn't contain</option>
+                </select>
+                <input type="text" id="parameter" name="parameter" placeholder="Enter parameter" style="width: 30%;"/>
+                <button type="button" class="button-svg">
+                    <img src="./Instructions/add_circle_outline.svg"/>
+                </button>
+            </div>
+            ;
+        }
+        
+        ReactDOM.render(<Hello />, document.getElementById('mydiv'));
+        ReactDOM.render(<Hi />, document.getElementById('ruleDiv'));
     </script>
 
   </body>
