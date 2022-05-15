@@ -37,4 +37,37 @@ $(document).ready(function(){
         
             
     });
+
+    $("#addRuleBtn").click(function() {
+        AddRuleDiv();
+    });
+
+    
 });
+
+function AddRuleDiv() {
+    console.log("sdfaf");
+    document.getElementById("ruleDiv").insertAdjacentHTML("afterend",`
+        <div>
+            If 
+            <select id="field" name="field" style="width: 20%;">
+                <option value="afff_sub_1">afff_sub_1</option>
+                <option value="afff_sub_2">afff_sub_2</option>
+                <option value="afff_sub_3">afff_sub_3</option>
+                <option value="afff_sub_4">afff_sub_4</option>
+            </select>
+            <select id="operator" name="operator" style="width: 20%;">
+                <option value="is_not">is not</option>
+                <option value="is">is</option>
+                <option value="starts_with">starts with</option>
+                <option value="ends_with">ends with</option>
+                <option value="contains">contains</option>
+                <option value="does_not_contain">doesn't contain</option>
+            </select>
+            <input type="text" id="parameter" name="parameter" placeholder="Enter parameter" style="width: 30%;"/>
+            <button type="button" class="button-svg" id="addRuleBtn">
+                <img src="./Instructions/add_circle_outline.svg"/>
+            </button>
+        </div>
+    `);
+}
