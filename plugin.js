@@ -38,11 +38,14 @@ $(document).ready(function(){
             
     });
 
-    $(".addRuleBtn").click(function() {
-        // AddRuleDiv();
-        document.getElementById("ruleDiv").insertAdjacentHTML("beforeend", paramBlock);
-        this.manageAddMinusBtn();
-    });
+    // $(".addRuleBtn").click(function() {
+    //     console.log("pass");
+    //     // AddRuleDiv();
+    //     document.getElementById("ruleDiv").insertAdjacentHTML("beforeend", paramBlock);
+    //     // this.manageAddMinusBtn();
+    // });
+
+    LoopAddParamBtn();
  
 });
 
@@ -80,7 +83,24 @@ var ruleBlock = `
 function AddRuleDiv() {
     console.log("sdfaf");
     document.getElementById("ruleDiv").insertAdjacentHTML("afterend", ruleBlock);
-    this.manageAddMinusBtn();
+    // this.manageAddMinusBtn();
+}
+
+function AddParamDiv() {
+    console.log("pass");
+    document.getElementById("ruleDiv").insertAdjacentHTML("beforeend", paramBlock);
+    LoopAddParamBtn();
+}
+
+function LoopAddParamBtn() {
+    var allAddParamButtons = document.querySelectorAll('[class*=addRuleBtn]');
+    console.log("Found", allAddParamButtons.length, "div which class starts with “button”.");
+
+    for (var i = 0; i < allAddParamButtons.length; i++) {
+        allAddParamButtons[i].addEventListener('click', function() {
+            AddParamDiv();
+        });
+    }
 }
 
 function manageAddMinusBtn() {
