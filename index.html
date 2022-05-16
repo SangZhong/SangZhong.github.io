@@ -11,7 +11,7 @@
   <body style="font-family: Arial, Helvetica, sans-serif" onload="javascript:AddRuleDiv()">
     <div id="mydiv"></div>
     <div class="container-border container-left">
-        <form action="./action.php">
+        <form action="./action.php" method="get">
             <div class="container container-inner">
                 <p class="title">Create Revenue Group</p>
                 <label for="groupName">Group Name</label>
@@ -36,21 +36,11 @@
             <div class="container container-inner">
                 <p class="title">
                     Rules
-                    <button id="add" style="float: right;">+ Add</button>
+                    <button type="button" class="addRuleBtn" style="float: right;">+ Add</button>
                 </p>
-                <div class="container-inner container-border container-border-dotted">
-                    <p>Rule 1</p>
-                    <div class="container-grey">
-                        <div id="ruleDiv">
-                            
-                        </div>
-                        
-                    </div>
-                    <p>
-                        then revenue is 
-                        <input type="text" id="revenue" name="revenue" placeholder="Enter amount"/>
-                    </p>
-                </div>
+                <div id="allRulesDiv">
+
+                </div> 
             </div>
             <div class="container container-button">
                 <!-- <button id="reset">Reset</button> -->
